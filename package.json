@@ -1,5 +1,5 @@
 {
-  "name": "dsh-catalog",
+  "name": "dsh-skill-catalog",
   "version": "1.0.0",
   "description": "DeepSeek Harness plugin: scan every skill your DSH can load into one browsable catalog (collection > category > command), with a sidebar panel, click-to-insert, and savable custom categories & command notes.",
   "type": "module",

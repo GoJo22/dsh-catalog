@@ -1,4 +1,4 @@
-# dsh-catalog
+# dsh-skill-catalog
 
 A **DeepSeek Harness (DSH) plugin** (not a skill): scan every skill your DSH can
 load, merge them into one browsable catalog, and put it in a sidebar panel —
@@ -218,19 +218,19 @@ a command is missing.
 
 ```bash
 # From npm (once published):
-dsh plugin --profile web      add dsh-catalog
-dsh plugin --profile desktop  add dsh-catalog
+dsh plugin --profile web      add dsh-skill-catalog
+dsh plugin --profile desktop  add dsh-skill-catalog
 
 # Or from a local checkout (any profile; web = dsh web, desktop = DSH desktop client):
-dsh plugin --profile web      add "link:/absolute/path/to/dsh-catalog"
-dsh plugin --profile desktop  add "link:/absolute/path/to/dsh-catalog"
+dsh plugin --profile web      add "link:/absolute/path/to/dsh-skill-catalog"
+dsh plugin --profile desktop  add "link:/absolute/path/to/dsh-skill-catalog"
 
 # Verify registration
-dsh web --dump-config | findstr dsh-catalog
+dsh web --dump-config | findstr dsh-skill-catalog
 dsh web                      # restart the harness
 ```
 
-Uninstall: `dsh plugin --profile web remove dsh-catalog`
+Uninstall: `dsh plugin --profile web remove dsh-skill-catalog`
 
 The panel UI needs the right-sidebar services
 (`@deepseek-ai/dsh-client-ui-sidebar-right`). Profiles without them still get

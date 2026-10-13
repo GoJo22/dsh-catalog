@@ -1,13 +1,13 @@
-# dsh-catalog DSH 插件注册（bundle 层）。
+# dsh-skill-catalog DSH 插件注册（bundle 层）。
 #
 # 安装方式（任选其一）：
-#   dsh plugin --profile web      add "link:/绝对路径/dsh-catalog"
-#   dsh plugin --profile desktop  add "link:/绝对路径/dsh-catalog"
-#   dsh plugin --profile web      add dsh-catalog        # 发布到 npm 后
-# 验证：dsh web --dump-config | findstr dsh-catalog
+#   dsh plugin --profile web      add "link:/绝对路径/dsh-skill-catalog"
+#   dsh plugin --profile desktop  add "link:/绝对路径/dsh-skill-catalog"
+#   dsh plugin --profile web      add dsh-skill-catalog        # 发布到 npm 后
+# 验证：dsh web --dump-config | findstr dsh-skill-catalog
 #
 # id 为 bundle 短名，name 必须与 npm 包名一致。
 
 - insert:
     - id: catalog
-      name: dsh-catalog
+      name: dsh-skill-catalog

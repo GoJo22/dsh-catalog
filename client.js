@@ -6,7 +6,7 @@
 //
 // 布局：侧边栏图标 -> main 面板（窄条 420px，不全屏，右侧留给对话区）。
 window.__ModuleLoader__.load({
-  id: "dsh-catalog",
+  id: "dsh-skill-catalog",
   factory(require) {
     const React = require("react");
     const h = React.createElement;

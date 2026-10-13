@@ -1,4 +1,4 @@
-# dsh-catalog
+# dsh-skill-catalog
 
 DeepSeek Harness（DSH）**插件**（非 skill）：把 DSH 能读到的 skills 统一扫描、
 归并、可视化，解决「skills 太多、不知道哪个命令属于哪个来源」的痛点。
@@ -201,19 +201,19 @@ QA & Testing /qa-plan /smoke-check /soak-test /regression-suite
 
 ```bash
 # 发布到 npm 后（推荐）：
-dsh plugin --profile web      add dsh-catalog
-dsh plugin --profile desktop  add dsh-catalog
+dsh plugin --profile web      add dsh-skill-catalog
+dsh plugin --profile desktop  add dsh-skill-catalog
 
 # 或本地链接（任选 profile；web 对应 dsh web，desktop 对应 DSH 桌面客户端）：
-dsh plugin --profile web      add "link:/绝对路径/dsh-catalog"
-dsh plugin --profile desktop  add "link:/绝对路径/dsh-catalog"
+dsh plugin --profile web      add "link:/绝对路径/dsh-skill-catalog"
+dsh plugin --profile desktop  add "link:/绝对路径/dsh-skill-catalog"
 
 # 验证已注册
-dsh web --dump-config | findstr dsh-catalog
+dsh web --dump-config | findstr dsh-skill-catalog
 dsh web                      # 重启 harness
 ```
 
-卸载：`dsh plugin --profile web remove dsh-catalog`
+卸载：`dsh plugin --profile web remove dsh-skill-catalog`
 
 面板 UI 依赖右侧边栏服务（`@deepseek-ai/dsh-client-ui-sidebar-right`）；
 没有该服务的 profile 仍可使用 tool 与 HTTP 服务，只是不显示面板。
