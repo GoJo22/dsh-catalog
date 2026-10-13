@@ -1,0 +1,60 @@
+{
+  "name": "dsh-catalog",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness plugin: scan every skill your DSH can load into one browsable catalog (collection > category > command), with a sidebar panel, click-to-insert, and savable custom categories & command notes.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "client.js",
+    "assets/icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "catalog",
+    "skills",
+    "sidebar",
+    "plugin"
+  ],
+  "license": "MIT",
+  "author": "GoJo22",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoJo22/dsh-catalog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GoJo22/dsh-catalog/issues"
+  },
+  "homepage": "https://github.com/GoJo22/dsh-catalog#readme",
+  "icon": "./assets/icon.svg",
+  "engines": {
+    "node": ">=18"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-sidebar-right"
+      ]
+    }
+  },
+  "peerDependencies": {}
+}

@@ -1,0 +1,18 @@
+# 依赖
+node_modules/
+
+# 运行时产物（含本机路径/端口信息，勿入库）
+assets/command-catalog.json
+assets/panel-url.txt
+
+# 临时文件
+.tmp-*
+*.log
+
+# npm 发布产物（npm pack / publish 可能落在 cwd）
+*.tgz
+*.tar.gz
+
+# 系统杂项
+.DS_Store
+Thumbs.db
